@@ -1,0 +1,43 @@
+.main {
+    display: flex;
+    border-radius: 5px 20px 5px 20px;
+    box-shadow: 2px 2px 4px gray;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.textDetails {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+
+    h3 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+}
+
+.img {
+    height: 265px;
+    max-width: 172px;
+    width: 172px;
+    border-radius: 5px 0 0 20px;
+}
+
+.comicInfo {
+    display: flex;
+    font-size: 12px;
+    font-size: 18px;
+    margin:  0;
+
+    img {
+        margin: 0 15px 0 30px;
+    }
+}
+
+.description {
+    font-size: 20px;
+    margin: 0 0 40px 0;
+}

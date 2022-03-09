@@ -1,0 +1,24 @@
+.structure {
+    background-color: #F5F5F5;
+    display: grid;
+    grid-template-rows: 150px auto 82px;
+    height: 100vh;
+    overflow: auto;
+
+    header {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    footer {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}
+
+.container {
+    background-image: url('../../assets/images/Background.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+

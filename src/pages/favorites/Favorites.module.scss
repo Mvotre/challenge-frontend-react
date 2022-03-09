@@ -1,0 +1,22 @@
+@import "../../assets/scss/main.scss";
+
+.container {
+  padding: 0 15%;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 42px;
+  color: white;
+  margin: 0 30px 30px 30px;
+  padding-top: 40px;
+  clear: both;
+  max-width: 500px;
+}
+
+.heroContainer2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 23%);
+  justify-content: space-between;
+  grid-gap: 20px;
+}

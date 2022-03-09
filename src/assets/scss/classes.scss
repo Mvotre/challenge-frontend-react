@@ -1,0 +1,63 @@
+// styles for the pagination plugin
+  .singlePage {
+    padding: 0 10px;
+
+    &:hover {
+        cursor: pointer;
+        color: $marvelLightGray
+    }
+  }
+
+  .controls {
+    padding: 0 10px;
+
+    &:hover {
+        cursor: pointer;
+        color: $marvelLightGray
+    }
+  }
+
+  .mainPagination {
+    padding: 0 15%;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    list-style: none;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  .pageDisabled {
+    color: $marvelLightGray;
+    pointer-events: none;
+  }
+  
+  
+  .pageActive {
+    color: darken($marvelRed, 15%);
+  }
+//
+
+// Styles for "Return to previous page" button
+  .backButton{
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFCDD2;
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    float: right;
+    transition: all 0.3s;
+    margin-top: 20px;
+
+    img {
+      margin-left: 10px;
+    }
+
+    &:hover {
+      color: darken(#FFCDD2, 15%);
+      cursor: pointer;
+    }
+  }
+//
