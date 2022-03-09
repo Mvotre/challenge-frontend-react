@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Desafio front-end
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Infelizmente mesmo com o tempo extra, não consegui fazer nem metade do que eu queria. Então no momento o projeto está num estado MVP (funciona, mas nem perto de usar as melhores práticas). 
 
-## Available Scripts
+## Para rodar: 
 
-In the project directory, you can run:
+Clonar o repositório ou fazer o download.
+Digitar npm install no prompt para instalar as dependências.
+Abrir o projeto em sua IDE.
+Ir na pasta src/helpers/ e abrir o arquivo apiKeys.js.
+Inserir sua private key e token para acesso a api da Marvel. 
+Npm start para rodar o projeto.
 
-### `npm start`
+**Sobre o projeto**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Todos os ícones eu salvei os SVG do Figma. No 'mundo real', provavelmente usaria uma fonte de ícones. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Usuário não pode adicionar duas vezes o mesmo herói na lista de favoritos.
 
-### `npm test`
+- O tamanho da descrição eu fiz uma função externa (salva na pasta Helpers), já que uso com diferentes valores em mais de um lugar. Na Home eu optei por deixar com somente 100 caracteres. Na descrição de cada revista, coloquei os 200 pedidos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Para a parte de estilos eu prefiro trabalhar com styled components. Mas como a descrição falava em usar Sass, optei por fazer com CSS Modules. Comecei a reorganizar os estilos, mas também não tive tempo. Criei uma pasta scss em /assets, e criei variáveis, mixins e classes compartilhadas. Faltou migrar tudo que eu conseguisse. 
 
-### `npm run build`
+- Apesar do texto com o "# results" no canto direito, a descrição falava para voltar EXATAMENTE 5 revistas. Então foi o que eu fiz, já limitando a quantidade de respostas na API. Mas nesse caso atual, eu só adicionaria o plugin de paginação nessa página também. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- No Figma o tamanho das revistas estava maior na página de detalhes. Porém, em um personagem de exemplo que estava usando, tinham capas com tamanho bem menor. Ao invés de perder qualidade deixando todas do mesmo tamanho, optei por usar todas no tamanho máximo da menor imagem disponível.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Coloquei uma lógica para o "Return to previous page" da página de detalhes voltar para a que foi clicada, seja ela a página principal ou a de favoritos.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Não consegui montar a lógica para a paginação de um jeito eficiente. Então, para o momento, usei um plugin (react-paginate). Não ficou exatamente igual o Figma :(
